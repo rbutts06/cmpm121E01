@@ -43,6 +43,7 @@
        if(!target && enemy.health != 0){
         target = enemy;
        }
+       //if enemies have the same health the earlier enemy is picked
        else if(target && target.health <= enemy.health){
         target = enemy;
        }
