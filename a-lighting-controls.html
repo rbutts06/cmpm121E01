@@ -28,12 +28,9 @@
     const swatch = document.querySelector("#swatch");
 
     function update() {
-      let item = colorList[0];
-      for (let i = 0; i < colorList.length; i++) {
-        if (i === colorIndex) item = colorList[i];
-        label.textContent = item.name;
-        swatch.style.backgroundColor = item.color;
-      } 
+      let item = colorList[colorIndex];
+      label.textContent = item.name;
+      swatch.style.backgroundColor = item.color;
     }
 
     document.querySelector("#next").addEventListener("click", () => {
